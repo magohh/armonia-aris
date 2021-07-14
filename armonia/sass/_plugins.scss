@@ -44,7 +44,7 @@
     right: 0;
     width: 50px;
     background: $primary;
-    
+
     border-radius: $border-radius-lg;
   }
 
@@ -71,8 +71,8 @@
   }
 }
 
-.yui-calendar div, .yui-calendar td, 
-.yui-calendar th, .yui-calendar thead, 
+.yui-calendar div, .yui-calendar td,
+.yui-calendar th, .yui-calendar thead,
 .yui-calendar span {
   font-family: $font-family-base !important;
 }
@@ -122,7 +122,7 @@ input[name=subbtn]{
   border-radius: 3px;
 }
 
-#listcal1{margin-bottom: 1em;}
+#listcal1,#listcal2,#listcal3,#listcal4,#listcal5{margin-bottom: 1em;}
 input[name=phone],
 input[name=name],
 input[name=email],
