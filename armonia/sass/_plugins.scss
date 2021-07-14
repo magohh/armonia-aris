@@ -1,0 +1,139 @@
+//
+// Custom WP plugins Styles
+//
+
+
+// Newsletter
+
+.tnp-subscription {
+
+  position: relative;
+  margin: 0 !important;
+  max-width: none !important;
+  border-radius: $border-radius-lg;
+  overflow: hidden;
+
+  label {
+    display: none !important;
+  }
+
+  input[type=email]{
+    font-weight: $font-weight-medium !important;
+    background-color: #fff !important;
+  }
+
+  ::-webkit-input-placeholder { /* Edge */
+    color: $secondary !important;
+  }
+
+  :-ms-input-placeholder { /* Internet Explorer */
+    color: $secondary !important;
+  }
+
+  ::placeholder {
+    color: $secondary !important;
+  }
+
+  .tnp-field-button{
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .tnp-field input[type="submit"] {
+    right: 0;
+    width: 50px;
+    background: $primary;
+    
+    border-radius: $border-radius-lg;
+  }
+
+  div.tnp-field{
+    margin-bottom: 0 !important;
+  }
+
+  /*.tnp-field input[type="submit"]*/
+
+}
+
+
+// Appointment Booking Calendar
+
+.abc_selectdate.fields { display: none;}
+
+#cp_abcform_pform{
+  @extend .row;
+  #calarea_3,#calarea_2{
+    @extend .col-12, .col-lg-8;
+  }
+  .custom-form-appointment {
+    @extend .col-12, .col-lg-4;
+  }
+}
+
+.yui-calendar div, .yui-calendar td, 
+.yui-calendar th, .yui-calendar thead, 
+.yui-calendar span {
+  font-family: $font-family-base !important;
+}
+
+.yui-calendar .calhead{
+    background-color: #ffffff !important;
+    color: initial !important;
+}
+.yui-calendar td.calcell.today {
+  border:1px solid #FFAF00!important;
+}
+.yui-calendar td.calcell.oom {
+  cursor:default!important;
+  color:#A6AAC6!important;
+    background-color: rgba(230, 230, 230,.3)!important;
+    border-radius: 3px!important;
+    border: none!important;
+}
+.yui-calendar td.calcell{
+  color:#CCC!important;
+  border: 1px solid #CCC!important;
+}
+.yui-calendar td.calcell.restricted {
+  margin:2px;color: #000!important;
+}
+.yui-calendar{
+    border-spacing: 1em!important;
+}
+.yui-calendar .calheader{font-size: 1.3rem!important;}
+.yui-calendar td.calcell{border-radius:3px!important;}
+.yui-calendar td.calcell a{color:#00A9AD!important;}
+.yui-calendar td.calcell.reserveddate a,.yui-calendar td.calcell.selected a{color:#fff!important;}
+.yui-calendar td.calcell.selected,.yui-calendar td.calcell.reserveddate{color:#fff!important;background-color:#00A9AD!important;padding:5px 0px!important;}
+.yui-panel .hd{padding:15px 25px!important;color:#000!important;background-color:#fff!important;font-family: $font-family-base;font-weight: 400!important;font-size: 1.2rem!important;}
+.yui-panel .bd{padding:0 25px 25px 25px!important;}
+.yui-panel .bd .cell,.yui-panel .bd .cell12{border-radius:3px!important;background-color:#00A9AD!important;border:0px!important;padding: 5px!important;}
+.listcal>div{background-color:#00A9AD!important;}
+
+input[name=subbtn]{
+  margin-left: 15px;
+  margin-bottom: 1em;
+  padding: 10px;
+  background-color: #00a9ad;
+  border-style: none;
+  color: #fff;
+  font-size: 1.2rem;
+  border-radius: 3px;
+}
+
+#listcal1{margin-bottom: 1em;}
+input[name=phone],
+input[name=name],
+input[name=email],
+input[name=hdcaptcha]{
+  width: 100%;
+  border:1px solid #ccc;
+  padding-left: 15px;
+}
+input[name=question][class*="width\: 100%\;"]{
+  width: 100%;
+  border:1px solid #ccc;
+  padding-left: 15px;
+}
+.yui-calendar .calnavright,.yui-calendar .calnavleft{filter: contrast(40%) sepia(46) hue-rotate(-13deg) saturate(1000%);}
