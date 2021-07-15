@@ -143,11 +143,16 @@
   font-weight: 600;
   line-height: 1.5;
 }
+.yui-panel .bd .cell:hover{
+  color: #fff;
+  background-color: #008487!important;
+  border-color: #00777a!important;
+}
 .yui-panel .bd .cell:focus{
   color: #fff;
   background-color: #008487!important;
   border-color: #00777a!important;
-
+  box-shadow: 0 0 0 0.2rem rgb(38 182 185 / 50%);
 }
 .listcal>div{
   background-color:#00A9AD!important;
@@ -175,6 +180,11 @@ input[name=subbtn]:focus{
   background-color: #008487;
   border-color: #00777a;
   box-shadow: 0 0 0 0.2rem rgb(38 182 185 / 50%);
+}
+input[name=subbtn]:hover{
+  color: #fff;
+  background-color: #008487;
+  border-color: #00777a;
 }
 
 #listcal1,#listcal2,#listcal3,#listcal4,#listcal5{margin-bottom: 1em;}
