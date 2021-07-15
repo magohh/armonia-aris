@@ -70,12 +70,18 @@
     @extend .col-12, .col-lg-4;
   }
 }
-.custom-form-appointment{
-  background-color: #fff;
-  padding: 15px;
-  border-radius: 10px;
-}
 
+.form-style{
+  background-color: #fff;
+  padding: 20px 20px  0 20px;
+  border-radius: 10px;
+  font-size: .9rem;
+  color: #a6aac6;
+  font-family: 'Poppins';
+  font-weight: 500;
+  border: 1px solid rgba(0,0,0,.1);
+  height: 420px;
+}
 .yui-calendar div, .yui-calendar td,
 .yui-calendar th, .yui-calendar thead,
 .yui-calendar span {
@@ -117,8 +123,7 @@
 .listcal>div{background-color:#00A9AD!important;}
 
 input[name=subbtn]{
-  margin-left: 15px;
-  margin-bottom: 1em;
+  margin: .5rem 0 1em 15px;
   padding: 10px;
   background-color: #00a9ad;
   border-style: none;
@@ -133,12 +138,30 @@ input[name=name],
 input[name=email],
 input[name=hdcaptcha]{
   width: 100%;
-  border:1px solid #ccc;
+  border: none;
   padding-left: 15px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 7px;
 }
-input[name=question][class*="width\: 100%\;"]{
+textarea[name=question][class*="width\: 100%\;"],textarea.outline-style{
   width: 100%;
-  border:1px solid #ccc;
   padding-left: 15px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+input[name=phone],
+input[name=name],
+input[name=email],
+textarea[name=question]:focus{
+outline: none ;
 }
 .yui-calendar .calnavright,.yui-calendar .calnavleft{filter: contrast(40%) sepia(46) hue-rotate(-13deg) saturate(1000%);}
+
+#abcservices ~ img{
+  margin-bottom: 5px;
+  margin-top: 5px;
+  outline: 2px solid #fff;
+  outline-offset: -1px;
+}
+
+table.yui-calendar.y2021{border: 1px;height: 420px;}
