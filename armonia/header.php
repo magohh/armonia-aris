@@ -73,8 +73,8 @@
 					<?php }else{ ?>
 						<a href="<?php echo SITEURL?>/about" class="d-block d-lg-inline-block py-3 py-lg-0 mr-lg-5 medium text-body">Harmonic Egg</a>
 					<?php } ?>
-					<a class="d-block d-lg-inline-block py-3 py-lg-0 mr-lg-5 medium text-body">E-Shop</a>
-					<a class="d-block d-lg-inline-block py-3 py-lg-0 mr-lg-5 medium text-body">Book Now</a>
+					<a href="<?php echo SITEURL?>book" class="d-block d-lg-inline-block py-3 py-lg-0 mr-lg-5 medium text-body">E-Shop</a>
+					<a href="<?php echo SITEURL?>book" class="d-block d-lg-inline-block py-3 py-lg-0 mr-lg-5 medium text-body">Book Now</a>
 					<a href="<?php echo SITEURL?>book" class="d-block d-lg-inline-block py-3 py-lg-1 px-4 btn btn-primary semibold">Book now</a>
 				</div>
 

@@ -53,7 +53,7 @@ get_header();
 <!-- Description -->
 		<section class="bg-img-sec-1st">
 			<div class="container">
-				<div class="row py-5">
+				<div class="row py-5" id="harmonic">
 					<div class="col-12 col-md-6">
 						<img class="d-block mw-100 mx-auto mt-3 mt-md-0 mb-5 mb-md-0" src="<?php echo THEMEPATH; ?>assets/img/harmonic_egg.png">
 					</div>

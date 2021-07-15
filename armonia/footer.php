@@ -33,9 +33,9 @@
 						<div class="col-md-4 col-lg offset-lg-1 mb-5">
 							<p class="bold kearning-3 mb-3 text-uppercase">Website Map</p>
 							<a href="" class="d-block medium text-secondary mb-2">Home</a>
-							<a href="" class="d-block medium text-secondary mb-2">Harmonic Egg</a>
-							<a href="" class="d-block medium text-secondary mb-2">E - Shop</a>
-							<a href="" class="d-block medium text-secondary mb-2">Contact Us</a>
+							<a href="<?php $permalink = get_permalink( $id ); ?>#harmonic" class="d-block medium text-secondary mb-2">Harmonic Egg</a>
+							<a href="<?php echo SITEURL?>book" class="d-block medium text-secondary mb-2">E - Shop</a>
+							<!--<a href="" class="d-block medium text-secondary mb-2">Contact Us</a>-->
 						</div>
 						<div class="col-md-4 col-lg mb-5">
 							<p class="bold kearning-3 text-uppercase">Contact us</p>

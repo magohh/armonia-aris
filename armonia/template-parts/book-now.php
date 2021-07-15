@@ -23,7 +23,7 @@
 				<div class="w-100"></div>
 				<div class="col-12 col-md-10 col-lg-7 mx-auto">
 					<div class="row">
-						<div class="col-12 col-md text-center">
+						<div class="col-12 col-md text-center mb-r">
 							<div class="card-booking is-session">
 								<p class="bold kearning-3 mb-0 pt-3 text-uppercase">One in Person</p>
 								<h3 class="h2 text-primary border-bottom pb-4 mb-4">Session</h3>
