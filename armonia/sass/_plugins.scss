@@ -70,6 +70,11 @@
     @extend .col-12, .col-lg-4;
   }
 }
+.custom-form-appointment{
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+}
 
 .yui-calendar div, .yui-calendar td,
 .yui-calendar th, .yui-calendar thead,
