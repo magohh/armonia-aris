@@ -133,8 +133,8 @@
     <input type="checkbox" name="sendemails_admin" value="1" vt="1" checked /> Send notification emails for this booking<br /><br />
     <?php @include_once dirname( __FILE__ ) . '/cpabc_recurrent_admin_opts.inc.php'; ?>
   </fieldset> 
-
 <?php } ?>
+<div class="form-style">
 <?php _e('Your phone number','cpabc'); ?>:<br />
 <input type="text" name="phone" value=""><br />
 <?php _e('Your name','cpabc'); ?>:<br />
@@ -142,7 +142,7 @@
 <?php _e('Your email','cpabc'); ?>:<br />
 <input type="text" name="email" value="<?php /** if (isset($current_user->user_email)) echo $current_user->user_email; */ ?>"><br />
 <?php _e('Comments/Questions','cpabc'); ?>:<br />
-<textarea name="question" style="width:100%"></textarea><br />
+<textarea class="outline-style" name="question" style="width:100%"></textarea><br />
 <?php      
  if (count($codes))
  {
@@ -194,6 +194,7 @@
   <div class="error message" id="hdcaptcha_error" generated="true" style="display:none;position: absolute; left: 0px; top: 25px;"></div>
   </div>
   <br />
+</div>
 </div>
 <?php } ?>
 <input type="submit" name="subbtn" class="cp_subbtn" value="<?php _e($button_label,'cpabc'); ?>">
