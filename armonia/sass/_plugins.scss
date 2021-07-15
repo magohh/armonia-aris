@@ -71,6 +71,10 @@
   }
 }
 
+.custom-form-appointment{
+  padding: 0;
+  padding-right: 0!important;
+}
 .form-style{
   background-color: #fff;
   padding: 20px 20px  0 20px;
@@ -79,7 +83,7 @@
   color: #a6aac6;
   font-family: 'Poppins';
   font-weight: 500;
-  border: 1px solid rgba(0,0,0,.1);
+  border: 1px solid #ccc;
   height: 420px;
 }
 .yui-calendar div, .yui-calendar td,
@@ -106,6 +110,11 @@
   color:#CCC!important;
   border: 1px solid #CCC!important;
 }
+.yui-calendar td.calcell:focus{
+  color: #fff;
+  background-color: #008487;
+  border-color: #00777a;
+}
 .yui-calendar td.calcell.restricted {
   margin:2px;color: #000!important;
 }
@@ -116,20 +125,56 @@
 .yui-calendar td.calcell{border-radius:3px!important;}
 .yui-calendar td.calcell a{color:#00A9AD!important;}
 .yui-calendar td.calcell.reserveddate a,.yui-calendar td.calcell.selected a{color:#fff!important;}
+.cellReserved, .cellReserved12{
+  border-radius:10px!important;
+  padding: .5rem 1.2rem!important;
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 1.5;
+  }
 .yui-calendar td.calcell.selected,.yui-calendar td.calcell.reserveddate{color:#fff!important;background-color:#00A9AD!important;padding:5px 0px!important;}
 .yui-panel .hd{padding:15px 25px!important;color:#000!important;background-color:#fff!important;font-family: $font-family-base;font-weight: 400!important;font-size: 1.2rem!important;}
 .yui-panel .bd{padding:0 25px 25px 25px!important;}
-.yui-panel .bd .cell,.yui-panel .bd .cell12{border-radius:3px!important;background-color:#00A9AD!important;border:0px!important;padding: 5px!important;}
-.listcal>div{background-color:#00A9AD!important;}
+.yui-panel .bd .cell,.yui-panel .bd .cell12{
+  border-radius:10px!important;
+  background-color:#00A9AD!important;
+  padding: .5rem 1.2rem!important;
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.yui-panel .bd .cell:focus{
+  color: #fff;
+  background-color: #008487!important;
+  border-color: #00777a!important;
+
+}
+.listcal>div{
+  background-color:#00A9AD!important;
+  font-weight: 600!important;
+  font-size: 1em;
+  padding: .5rem 1.5rem!important;
+  border-radius: 10px!important;
+}
 
 input[name=subbtn]{
-  margin: .5rem 0 1em 15px;
-  padding: 10px;
+  margin: .25rem 0 1em 15px;
   background-color: #00a9ad;
   border-style: none;
   color: #fff;
-  font-size: 1.2rem;
-  border-radius: 3px;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  border-radius: 10px;
+  margin-left: auto;
+  padding: .75rem 3.5rem;
+  width: 31.7%;
+}
+input[name=subbtn]:focus{
+  color: #fff;
+  background-color: #008487;
+  border-color: #00777a;
+  box-shadow: 0 0 0 0.2rem rgb(38 182 185 / 50%);
 }
 
 #listcal1,#listcal2,#listcal3,#listcal4,#listcal5{margin-bottom: 1em;}
@@ -152,10 +197,13 @@ textarea[name=question][class*="width\: 100%\;"],textarea.outline-style{
 input[name=phone],
 input[name=name],
 input[name=email],
-textarea[name=question]:focus{
+textarea[name=question],
+[name=hdcaptcha]:focus{
 outline: none ;
 }
-.yui-calendar .calnavright,.yui-calendar .calnavleft{filter: contrast(40%) sepia(46) hue-rotate(-13deg) saturate(1000%);}
+
+.yui-calendar .calnavright,.yui-calendar .calnavleft,.container-close{filter: contrast(40%) sepia(46) hue-rotate(-13deg) saturate(1000%);}
+.container-close{margin: 5px 0;}
 
 #abcservices ~ img{
   margin-bottom: 5px;
@@ -163,5 +211,23 @@ outline: none ;
   outline: 2px solid #fff;
   outline-offset: -1px;
 }
-
+.yui-calcontainer table, .yui-calcontainer th, .yui-calcontainer td{border: none;}
+.yui-calcontainer.multi .groupcal{border-color: #ccc!important;height: 420px;}
 table.yui-calendar.y2021{border: 1px;height: 420px;}
+
+@media all and (min-width: 0px) and (max-width: 767px){
+input[name=subbtn]{
+  margin: 1rem 15px;
+  width: 100%;
+  }
+  .form-style{margin-right: 15px!important;}
+}
+
+@media all and (min-width: 766px) and (max-width: 991px){
+input[name=subbtn]{
+  margin: 1rem 0;
+  width: 100%;
+  }
+  #calarea_2,#calarea_3{padding: 0!important;}
+.custom-form-appointment{padding: 0px!important;}
+}
