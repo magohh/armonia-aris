@@ -142,11 +142,13 @@
   font-size: 1em;
   font-weight: 600;
   line-height: 1.5;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 .yui-panel .bd .cell:hover{
   color: #fff;
   background-color: #008487!important;
   border-color: #00777a!important;
+  @include transition($btn-transition);
 }
 .yui-panel .bd .cell:focus{
   color: #fff;
@@ -174,6 +176,7 @@ input[name=subbtn]{
   margin-left: auto;
   padding: .75rem 3.5rem;
   width: 31.7%;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 input[name=subbtn]:focus{
   color: #fff;
@@ -231,6 +234,12 @@ input[name=subbtn]{
   width: 100%;
   }
   .form-style{margin-right: 15px!important;}
+  .yui-panel .bd .cell,.yui-panel .bd .cell{
+    width: 250px;
+    padding: 0 25px;
+    margin: 5px auto;
+  }
+  .yui-panel-container a{display: flex;}
 }
 
 @media all and (min-width: 766px) and (max-width: 991px){
@@ -240,4 +249,11 @@ input[name=subbtn]{
   }
   #calarea_2,#calarea_3{padding: 0!important;}
 .custom-form-appointment{padding: 0px!important;}
+.yui-panel .bd .cell,.yui-panel .bd .cell{
+    width: 250px;
+    padding: 0 25px;
+    margin: 5px auto;
+  }
+  .yui-panel-container a{display: flex;}
 }
+
